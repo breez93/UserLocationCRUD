@@ -1,5 +1,6 @@
 <?php include "config.php";?>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,14 @@
 </head>
 <div class="container" id="Titulo">
 
-    <h2>Programa de inserção de utilizadores e Morada</h2>
+    <h2>CREATE READ UPDATE DELETE program</h2>
 
 </div>
-
 <div class="container" id="Menu de Opções">
 
     <h3>Menu de opções</h3>
-    <a href="user_regist.php?" class="button">Registar Utilizador</a>
-    <a href="address_regist.php" class="button">Registar Morada</a>
-
+    <a href="user_regist.php" class="button">Registar Utilizador</a>
+    <a href="address_regist.php?IDuser=<?php echo $row["IDuser"];?>" class="button">Registar Morada</a>
 </div>
 <div class="container">
 
@@ -32,7 +31,7 @@
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Idade </th>
+                        <th>Hobbies </th>
                         <th>Telemovel</th>
                         <th>Email</th>
                         <th>password</th>
@@ -44,20 +43,21 @@
             while($row=mysqli_fetch_assoc($result)){
                 echo "<tr>
                   <td>".$row["nome"]."</td>"."
-                  <td>".$row["idade"]."</td>"."
+                  <td>".$row["hobbies"]."</td>"."
                   <td>".$row["telemovel"]."</td>
                   <td>".$row["email"]."</td>
                   <td>".$row["password"]."</td>";?>
                 <td>
-                    <a href="user_update.php?update=<?php echo $row["IDuser"];?>" name="update" class="button">Edit</a>
-                    <a href="user_delete.php?delete=<?php echo $row["IDuser"];?>" name="delete" class="button">Delete</a>
-                </td>    
+                    <a href="user_update.php?edit=<?php echo $row["IDuser"];?>" name="edit" class="button">Edit</a>
+                    <a href="user_delete.php?delete=<?php echo $row["IDuser"];?>" name="delete"
+                        class="button">Delete</a>
+                </td>
                 <?php }
             }
             ?>
             </table>
             <table>
-            <?php
+                <?php
             echo "
                 <thead>
                 <tr>
@@ -68,6 +68,7 @@
                 <th>Cp</th>
                 </tr>
                 </thead>";
+                // address_select
                 $sqlRelation ="SELECT * from address";
                 $resultado = mysqli_query($con,$sqlRelation);
                 if(mysqli_num_rows($resultado)>0){
@@ -78,15 +79,19 @@
                       <td>".$row["concelho"]."</td>
                       <td>".$row["rua"]."</td>
                       <td>".$row["cp"]."</td>";?>
-            
-            
-            <td>
-                <a href="address_update.php?edit=<?php echo $row["IDuser"];?>" name="edit" class="button">Edit</a>
-                <a href="address_delete.php?delete=<?php echo $row["IDuser"];?>" name="delete" class="button">Delete</a>
-            </td><?php
+
+
+                <td>
+                    <a href="address_update.php?edit=<?php echo $row["IDuser"];?>" name="edit" class="button">Edit</a>
+                    <a href="address_delete.php?delete=<?php echo $row["IDuser"];?>" name="delete"
+                        class="button">Delete</a>
+                </td><?php
             }
         }
             ?>
+            </table>
+
+
     </body>
 </div>
 

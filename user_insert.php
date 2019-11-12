@@ -5,21 +5,18 @@
        echo "conection failed";
    }
    else{"";}
-
-    if(isset($_POST["insert"])){
+    if(isset($_POST["inseriruser"])){
         $nome=$_POST["name"];
-        $idade=$_POST["idade"];
+        $hobbies=$_POST["hobbies"];
         $telemovel=$_POST["telemovel"];
         $login=$_POST["email"];
         $pass=$_POST["password"]; 
 
     }    
-    $edit = "INSERT INTO user(nome, idade, telemovel, email, password)
-    VALUES ('$nome','$idade','$telemovel','$login','$pass')";
-    
-    $return=mysqli_query($con,$edit);
+    $insert = "INSERT INTO user(nome, hobbies, telemovel, email, password)
+    VALUES ('$nome','$hobbies','$telemovel','$login','$pass')";
+    $return=mysqli_query($con,$insert);
     if($return){
         header("Location:index.php");
     }
-    ?>
-    
+?>
