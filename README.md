@@ -14,6 +14,9 @@ Pontos do trabalho
 
 # - O nome de cada ficheiro deverá ter a seguinte nomenclatura base, consoante a operação: 
 
+# NOTA o pessoas_regist.php Serve para remeter para o insert.php 
+# o que eu queria fazer era se CARREGASSEMOS no edit ele remetia para o REGIST mas MUDAVA O BOTAO CRIAR PARA UPDATE E remetia para o index com as alteraçoes 
+
 # pessoas_select.php esta no index
 # pessoas_insert.php ja funciona
 # pessoas_update.php Nao funciona 
