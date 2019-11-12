@@ -1,10 +1,5 @@
-# UserLocationCRUD
-# O importante sao as operações nas tabelas da base de dados
-# esquece o botao do perfil, os perfis dos utilizadores vao aparecer no index.
-# se existir perfil nao da para criar outro registo igual, se existir registo da para inserir uma morada
-# quando e inserida uma morada aparece os dados numa table por baixo do respetivo utilizador.
-# Nao entendo o que professor pretende com Menu mas penso que seja os botoes disponiveis se existir certas clausulas. 
-# quando clicado no botao edit muda o outro botao para atualizar ou update e faz o update
+# falta o crud da address(o select ja esta),(falta o insert)(delete)(update)
+# e o update users tambem falta
 
 Pontos do trabalho
 #Características:
