@@ -20,19 +20,19 @@
         </p>
         <p>
             <label for="idade">idade : </label>
-            <input type="text" name="idade" placeholder="introduza idade" required id="age">
+            <input type="idade" name="idade" placeholder="introduza idade" required id="age">
         </p>
         <p>
-            <label for="nome">telemovel : </label>
-            <input type="text" name="telemovel" placeholder="introduza telemovel" required class="name">
+            <label for="telemovel">telemovel : </label>
+            <input type="telemovel" name="telemovel" placeholder="introduza telemovel" required class="name">
         </p>
         <p>
             <label for="email">email : </label>
-            <input type="text" name="email" placeholder="introduza email" required id="email">
+            <input type="email" name="email" placeholder="introduza email" required id="email">
         </p>
         <p>
             <label for="password">password : </label>
-            <input type="text" name="password" placeholder="introduza password" required id="password">
+            <input type="password" name="password" placeholder="introduza password" required id="password">
         </p>
         <p>
         <input type="submit" name="insert" value="Create" class="button">

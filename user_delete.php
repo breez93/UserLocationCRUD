@@ -1,9 +1,23 @@
 <?php
 
-if(isset($_GET["delete"])){
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "crude";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error($conn));
+}
+
+
+if("user_delete.php"==true){
     $id=$_GET["delete"];
-    $sqldelete="DELETE from user where IDuser='$id'";
+    $delete="DELETE from user where iduser='$id' ";
     $resultdelete=mysqli_query($conn,$delete);   
-    header("Location:index.php");
+    $_SESSION["message"]="Data has been deleted";
+    $_SESSION["msg_type"]="danger";
+    header("location:index.php");
+
 }
 ?>
