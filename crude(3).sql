@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12-Nov-2019 às 12:36
+-- Tempo de geração: 12-Nov-2019 às 18:07
 -- Versão do servidor: 10.4.8-MariaDB
 -- versão do PHP: 7.3.10
 
@@ -57,8 +57,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`IDuser`, `nome`, `idade`, `telemovel`, `email`, `password`) VALUES
-(1, 'Paulo Rafael', '0000-00-00 00:00:00', '34342342', 'breezeblocks19@hotmail.com', 'sasasa'),
-(2, 'snfasbj', '0000-00-00 00:00:00', '34342342', 'breezeblocks19@hotmail.com', 'sasasa');
+(26, 'fasf', '0000-00-00 00:00:00', '34342342', 'breezeblocks19@hotmail.com', 'sasa');
 
 --
 -- Índices para tabelas despejadas
@@ -84,13 +83,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT de tabela `address`
 --
 ALTER TABLE `address`
-  MODIFY `IDaddress` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `IDaddress` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `user`
 --
 ALTER TABLE `user`
-  MODIFY `IDuser` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `IDuser` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- Restrições para despejos de tabelas

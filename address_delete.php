@@ -10,9 +10,9 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error($conn));
 }
 
-if("user_delete.php"==true){
+if("address_delete.php"==true){
     $id=$_GET["delete"];
-    $delete="DELETE from user where IDuser='$id'";
+    $delete="DELETE from address where IDaddress='$id' ";
     $resultdelete=mysqli_query($conn,$delete);   
     $_SESSION["message"]="Data has been deleted";
     $_SESSION["msg_type"]="danger";
