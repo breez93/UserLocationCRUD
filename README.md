@@ -1,28 +1,25 @@
 # UserLocationCRUD
-# O importante sao as operações nas tabelas da base de dados
-# esquece o botao do perfil, os perfis dos utilizadores vao aparecer no index.
-# se existir perfil nao da para criar outro registo igual, se existir registo da para inserir uma morada
-# quando e inserida uma morada aparece os dados numa table por baixo do respetivo utilizador.
-# Nao entendo o que professor pretende com Menu mas penso que seja os botoes disponiveis se existir certas clausulas. 
-# quando clicado no botao edit muda o outro botao para atualizar ou update e faz o update
 
 Pontos do trabalho
 #Características:
 
-- Pelo menos duas tabelas, com relação entre ambas.
+# - Pelo menos duas tabelas, com relação entre ambas. Ja esta
 
-- Cada tabela com pelo menos 5 campos, de diferentes formatos.
+# - Cada tabela com pelo menos 5 campos, de diferentes formatos. Ja esta
 
-- Index.php com introdução e menu  principal.
+# - Index.php com introdução e menu  principal. Nao esta!! 
 
-- O nome de cada ficheiro deverá ter a seguinte nomenclatura base, consoante a operação:
+# Falta a condiçao que permite criar a moraada se ja existir uma linha users
 
-nomedatabela_operacao.php
 
-Exemplo:
+# - O nome de cada ficheiro deverá ter a seguinte nomenclatura base, consoante a operação: 
 
-pessoas_select.php
-pessoas_insert.php
-pessoas_update.php
-pessoas_delete.php
+# pessoas_select.php esta no index
+# pessoas_insert.php ja funciona
+# pessoas_update.php Nao funciona 
+# pessoas_delete.php Ja funciona
 
+# address_insert.php nao esta
+# address_update.php nao esta
+# address_select.php ja esta! mas falta a condiçao baixo da tabela do users no index
+# address_delete.php nao esta
