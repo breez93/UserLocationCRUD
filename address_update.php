@@ -1,0 +1,1 @@
+UPDATE `address` SET `IDaddress`=[value-1],`distrito`=[value-2],`cidade`=[value-3],`concelho`=[value-4],`rua`=[value-5],`cp`=[value-6] WHERE `IDaddress`
