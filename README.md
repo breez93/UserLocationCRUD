@@ -1,2 +1,2 @@
-# Ta beautifull ima  genius 
+# Ta beautifull 
 # falta o insert address e o update 
